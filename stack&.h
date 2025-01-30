@@ -5,8 +5,11 @@ typedef struct {
     int items[MAX_SIZE_S];
     int top;
 } Stack;
+
+
 void initStack(Stack* stack);
+int is_empty_s(const Stack* stack);
 void push(Stack* stack, int item);
 int pop(Stack* stack);
-int peek_s(const Stack* stack);
-#endif 
+int peek_s(const Stack* stack); 
+#endif // STACK_H
